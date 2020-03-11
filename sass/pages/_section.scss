@@ -1,0 +1,192 @@
+/* start chefs*/
+.chefs{
+    @extend %min;
+    background: url(../img/bg_2.jpg);
+    background-color: red;
+    margin-top: 70px;
+    height: 500px;
+    h2{
+      color:  #fbfbfb;
+    }
+    hr{
+        background-color:#fbfbfb ;
+    }
+    .slide{
+        .carousel-inner{
+            .carousel-item{
+                text-align: center;
+                
+                span{
+                    
+                    background-position: center center;
+                     background-size: cover;
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 50%;
+                    
+                    display: block;
+                    margin: auto;
+                }
+                .q1{
+                    @extend %min;
+                    background: url(../img/person_1.jpg);
+                    
+                }
+                .q2{
+                    @extend %min;
+                    background: url(../img/person_3.jpg);
+                    
+                }
+                .q3{
+                    @extend %min;
+                    background: url(../img/person_2.jpg);
+                   
+                }
+                h5{
+                    margin-top: 20px;
+                    font-family: cursive;
+                     font-weight: 700;
+                     color: #dad6d1;
+                }
+                h6{
+                    font-family: cursive;
+                    color: #fbe9bf;
+                }
+            }
+        }
+        .carousel-indicators{
+            top:300px;
+            li{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+            
+        }
+    }
+}
+
+%min{
+    background-position: center center;
+    background-size: cover;
+}
+/* end chefs*/
+/* START Proportions*/
+.proportions{
+    margin-top: 50px;
+    text-align: center;
+    .por{
+        margin-top: 30px;
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+    text-align: center;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: auto;
+    transition: background 2s;
+    &:hover{
+        background-color: #615a5a;
+        color: #fff;
+    }
+    .fas{
+        transform: rotate(-45deg);
+    }
+    }
+    span{
+        display: block;
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    h6{
+        margin-bottom: 30px;
+        font-family: cursive;
+        font-size: 20px;
+    }
+}
+
+/* end Proportions*/
+/* start footer*/
+footer{
+    background: url(../img/footer-bg.png);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 200px 0px 20px;
+    color: #fff;
+    @media #{$maxMobile} {
+        padding: 0 0px 20px;
+    }
+    h2{
+        @media #{$maxMobile} {
+            
+            color: #000;
+        }
+    }
+   hr{
+       background-color: #fff;
+       @media #{$maxMobile} {
+            
+        background-color: #000;
+    }
+   }
+   iframe{
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px 0px #0f8490;
+   }
+   input[type=text]{
+    width: 49%;
+    background: none;
+     padding: 12px;
+     border-radius: 5px;
+     border: 2px solid #929191;
+     margin-top: 15px;
+     color: #f3f2f2;
+ }
+ input[type=email]{
+    width: 100%;
+    background: none;
+     padding: 12px;
+     border-radius: 5px;
+     border: 2px solid #929191;
+     margin-top: 10px;
+     color: #f3f2f2;
+ }
+ textarea{
+    width: 100%;
+    height: 175px;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #929191;
+    margin-top: 10px;
+ 
+ }
+ input[type=submit]{
+    border: none;
+     width: 100%;
+     background: #108172;
+     padding: 12px;
+     border-radius: 30px;
+     margin-top: 10px;
+     color: #cabdbd;
+     font-size: 20px;
+    }
+}
+/* end footer*/
+/* start scroll  top*/
+.top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #232d2d;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+/* end scroll  top*/

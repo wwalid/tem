@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+.over {
+  background: #021423;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  padding-top: 30%;
+}
+
+/* strat nav bar */
+.header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  .navbar {
+    background: linear-gradient(90deg, #536abd, #09aac3);
+    .navbar-brand {
+      span {
+        font-weight: bold;
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+  }
+  .navbar-nav {
+    .active {
+      color: #000 !important;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    .nav-item {
+      .nav-link {
+        color: #fff;
+        font-weight: 600;
+        font-size: 22px;
+        &:hover {
+          background-color: #fff;
+          color: #000;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
+
+/*end nav bar */
+/*start headee*/
+
+.headee {
+  position: relative;
+  background: linear-gradient(90deg, #536abd, #09aac3);
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url("../img/wave.png") no-repeat;
+    background-size: cover;
+  }
+  h4 {
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+    color: #061331;
+  }
+  h1 {
+    font-size: 44px;
+    font-family: cursive;
+    font-weight: bold;
+    color: #e8e8e8;
+  }
+  p {
+    font-family: cursive;
+    font-size: 18px;
+
+    color: #d1d2d2;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/*end headee*/
+/*start about */
+.about {
+  margin-top: 50px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  p {
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    font-family: cursive;
+    color: #616161;
+  }
+}
+
+/*end about */
+/*start Services */
+.Services {
+  margin-top: 70px;
+  .ser {
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 5px;
+    transition: background 2s;
+    &:hover {
+      background-color: #07987d;
+      color: #fff;
+      box-shadow: 13px 14px 12px 0px #504949;
+    }
+    .fas {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: 500;
+      font-family: cursive;
+    }
+  }
+}
+
+/*  start OUR MENU */
+.menu {
+  margin-top: 60px;
+  background: url("../img/bg_4.jpg") no-repeat;
+  background-size: cover;
+
+  h2 {
+    padding-top: 30px;
+    color: #fff;
+  }
+  hr {
+    background-color: #fff;
+  }
+  .card {
+    background: none;
+    border: none;
+    .card-body {
+      .card-title {
+        color: #f8ffff;
+        font-family: cursive;
+        font-weight: 600;
+      }
+      .card-text {
+        color: #9ea2a2;
+        font-family: cursive;
+        line-height: 2;
+      }
+      span {
+        color: #ceb60b;
+        font-size: 21px;
+        font-family: cursive;
+      }
+      a {
+        text-decoration: none;
+        color: #efeee7;
+        border: 1px solid #eaeae5;
+        padding: 5px 19px;
+        margin-left: 15px;
+        transition: background 2s;
+        &:hover {
+          background-color: #fac564;
+          border: 1px solid #fac564;
+          color: #000;
+        }
+      }
+    }
+  }
+  .one {
+    background: url("../img/dishes_2.jpg") no-repeat;
+  }
+  .two {
+    background: url("../img/dishes_4.jpg") no-repeat;
+  }
+  .three {
+    background: url("../img/burger-1.jpg") no-repeat;
+  }
+  .four {
+    background: url("../img/pizza-4.jpg") no-repeat;
+  }
+  .five {
+    background: url("../img/pizza-7.jpg") no-repeat;
+  }
+  .six {
+    background: url("../img/pizza-1.jpg") no-repeat;
+  }
+  .card-img {
+    background-size: cover;
+    background-position: center center;
+    height: 270px;
+  }
+
+  .theshow {
+    margin-top: 40px;
+    .shuffle {
+      list-style: none;
+      text-align: center;
+      font-size: 25px;
+      padding: 15px 0px;
+
+      .filter {
+        display: inline-block;
+        text-align: center;
+        padding: 5px 12px;
+        border-radius: 3px;
+        color: #f1e7e7;
+        font-family: monospace;
+      }
+    }
+    .fil {
+      background-color: #fac564;
+      color: #000 !important;
+    }
+    .gallery {
+      .mix {
+        display: none;
+        .media {
+          margin-top: 20px;
+          margin-bottom: 10px;
+          .z1 {
+            background: url("../img/pizza-3.jpg");
+          }
+          .z2 {
+            background: url("../img/pizza-6.jpg");
+          }
+          .z3 {
+            background: url("../img/pasta-1.jpg");
+          }
+          .z4 {
+            background: url("../img/pasta-2.jpg");
+          }
+          .z5 {
+            background: url("../img/drink-1.jpg");
+          }
+          .z6 {
+            background: url("../img/drink-2.jpg");
+          }
+          .img-show {
+            background-size: cover;
+            width: 90px;
+            height: 90px;
+            background-position: center center;
+            border-radius: 50%;
+          }
+          h5 {
+            color: #a9a8a6;
+            font-family: cursive;
+            margin-left: 10px;
+          }
+          p {
+            color: #797878;
+            font-family: cursive;
+            margin-left: 10px;
+          }
+          span {
+            font-family: cursive;
+            color: #fac564;
+            display: block;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*  end OUR MENU */
+
+/* start reservation*/
+.reservation {
+  margin-top: 50px;
+
+  position: relative;
+  label {
+    color: #636363;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  span {
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #9ea2a2;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  .fas {
+    color: #696969;
+  }
+  select {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #9ea2a2;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #696969;
+  }
+  button {
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    /* width: 200px; */
+    background: none;
+    border: 1px solid #b3900f;
+    font-size: 20px;
+    color: #d2950a;
+    border-radius: 3px;
+    padding: 8px 25px;
+    transition: background 2s;
+    &:hover {
+      background-color: #d2950a;
+      color: #fff;
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+hr {
+  width: 35px;
+  height: 2px;
+  background-color: #272626;
+  margin-bottom: 40px;
+}
